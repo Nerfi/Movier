@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TFG</string>
+    <string name="loginBtn">Login</string>
+    <string name="registerBtn">Register</string>
+    <string name="appTitle">Welcome to Movier</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="userName">User name</string>
+    <string name="registerIntoAccount">Register into your account</string>
+    <string name="loginAcc">Login into your account</string>
+</resources>

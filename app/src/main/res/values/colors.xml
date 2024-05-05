@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#BACED3</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="snackBarBackground">#41B06E</color>
+
+    <color name="colorPrimary">#41B06E</color>
+    <color name="colorPrimaryDark">#12B06E</color>
+    <color name="hintcolor">#F3F8FF</color>
+
+    <color name="purple">#8692f7</color>
+</resources>

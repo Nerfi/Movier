@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android:gravity="center" -> Este atributo centra los elementos hijos horizontalmente y verticalmente -->
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+
+    android:layout_height="match_parent"
+
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_gravity="center"
+
+
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/homeTitle"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_above="@+id/movieName"
+        android:layout_gravity="center"
+        android:textColor="@color/hintcolor"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="29dp"
+        android:text="Create a Movie"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/movieName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/movieDescription"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="bottom"
+        android:textColorHint="@color/hintcolor"
+        android:hint="Movie name" />
+
+    <EditText
+        android:id="@+id/movieDescription"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_above="@+id/movieReview"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:textColorHint="@color/hintcolor"
+        android:hint="Movie Description"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/movieReview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/textView6"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:textColorHint="@color/hintcolor"
+        android:hint="Movie Review"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ratingBar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="38dp"
+        android:textColor="@color/hintcolor"
+        android:text="Rate the movie"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="298dp" />
+
+    <Button
+        android:id="@+id/createMovieBtn"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="203dp"
+        android:text="Create movie" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="496dp"
+        android:layout_height="120dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="12dp"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</RelativeLayout>
